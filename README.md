@@ -43,24 +43,19 @@ This module contains relevant functions for the creation and manipulation of Spo
 
 ### Functions provided by spotifyFunctions
 
-`login(user)`
-
+`login(user)`  
 Authenticates a user. Takes username as parameter. 
 Returns a `Spotify` object.
 
-`createPlaylist(spotify, user, playlistName, public = True)`
-
+`createPlaylist(spotify, user, playlistName, public = True)`  
 Create a playlist with name = `playlistName`. It is a public playlist by default. Takes a `Spotify` object, `username` string, `playlistName` string as parameters. Returns a playlist creation confirmation string. 
 
-`getPlaylist(spotify, user, playlistName, limit = 50)`
-
+`getPlaylist(spotify, user, playlistName, limit = 50)`  
 Gets a `Playlist` object with name = `playlistName`. Takes a `Spotify` object, `username` string, `playlistName` string as parameters. Returns a `Playlist` object. 
  
- `makeCollaborative(spotify, user, playlist)`
-
+ `makeCollaborative(spotify, user, playlist)`  
 Makes a `playlist` collaborative. Takes a `Spotify` object, `username` string, 'Playlist' object as parameters. Returns a 'Playlist' object.
  
- 'insertTracks(spotify, user, playlist, tracks)'
- 
+ 'insertTracks(spotify, user, playlist, tracks)'  
  Inserts `tracks` into a `playlist`. Takes a `Spotify` object, `username` string, 'Playlist' object, `tracks` array as parameters. Returns a `snapshot_id` of the transaction. 
  `tracks` is an array that can contain Spotify tracks in the form of a `trackId`, `track URI` or `track URL`. 
