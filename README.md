@@ -56,6 +56,6 @@ Gets a `Playlist` object with name = `playlistName`. Takes a `Spotify` object, `
  `makeCollaborative(spotify, user, playlist)`  
 Makes a `playlist` collaborative. Takes a `Spotify` object, `username` string, 'Playlist' object as parameters. Returns a 'Playlist' object.
  
- 'insertTracks(spotify, user, playlist, tracks)'  
+ `insertTracks(spotify, user, playlist, tracks)`  
  Inserts `tracks` into a `playlist`. Takes a `Spotify` object, `username` string, 'Playlist' object, `tracks` array as parameters. Returns a `snapshot_id` of the transaction. 
  `tracks` is an array that can contain Spotify tracks in the form of a `trackId`, `track URI` or `track URL`. 
