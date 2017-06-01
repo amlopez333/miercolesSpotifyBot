@@ -30,7 +30,7 @@ def createPlaylist(spotify, user, playlistName, public = True):
 #recupera el objeto Playlist correspondiente a playlist name
 def getPlaylist(spotify, user, playlistName, limit = 50):
     playlists = spotify.user_playlists(user, limit)
-    playlist = next(item for item in playlists['items'] if item['name'] == playlistName)
+    playlist = next(item for item in playlists['items'] if item['name'] == playlistName and item['collaborative'] == False)
     return playlist
 
 #Vuelve una playlist colaborativa
@@ -45,6 +45,9 @@ def makeCollaborative(spotify, user, playlist):
 def insertTracks(spotify, user, playlist, tracks):
     playlistId = playlist['id']
     return spotify.user_playlist_add_tracks(user, playlistId, tracks)
+
+def getPlaylistURL(playlist):
+    return playlist['uri']
 
 
 
@@ -69,3 +72,4 @@ if (__name__ == '__main__'):
     results = insertTracks(spotify, user, playlist, [testSongs[list(testSongs.keys())[2]], testSongs[list(testSongs.keys())[3]]])
     print("Tracks to insert using Track URL: \n{0}\n{1}".format(list(testSongs.keys())[4], list(testSongs.keys())[5]))
     results = insertTracks(spotify, user, playlist, [testSongs[list(testSongs.keys())[4]], testSongs[list(testSongs.keys())[5]]])
+    print(getPlaylistURL(playlist))
