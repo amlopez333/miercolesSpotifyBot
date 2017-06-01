@@ -46,8 +46,10 @@ def insertTracks(spotify, user, playlist, tracks):
     playlistId = playlist['id']
     return spotify.user_playlist_add_tracks(user, playlistId, tracks)
 
-def getPlaylistURL(playlist):
+def getPlaylistURI(playlist):
     return playlist['uri']
+def getPlaylistURL(playlist):
+    return playlist['external_urls']['spotify']
 
 
 
