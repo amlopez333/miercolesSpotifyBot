@@ -17,6 +17,7 @@ Python 3 Spotify bot that adds Spotify tracks to a playlist for future listening
     >setx SPOTIPY_CLIENT_SECRET YOUR_CLIENT_SECRET  
     >setx SPOTIPY_REDIRECT_URI YOUR_REDIRECT_URI  
 4. To test proper installation, run spotifyFunctions.py. After inputting your Spotify username, you should have a playlist named *Test*. It should contain the following tracks:
+
     | Track Name| Artist |
     | ----- | :----------- |
     | '57 Strat 2 | John Jorgenson Electric Band |
