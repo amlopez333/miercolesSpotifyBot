@@ -8,14 +8,14 @@ Python 3 Spotify bot that adds Spotify tracks to a playlist for future listening
 2. pip install spotipy
 3. Set environment variables. 
     On Linux 
-    >export SPOTIFY_CLIENT_ID=YOUR_CLIENT_ID  
-    >export SPOTIFY_CLIENT_SECRET=YOUR_CLIENT_SECRET  
-    >export SPOTIFY_REDIRECT_URI=YOUR_REDIRECT_URI  
+    >export SPOTIPY_CLIENT_ID=YOUR_CLIENT_ID  
+    >export SPOTIPY_CLIENT_SECRET=YOUR_CLIENT_SECRET  
+    >export SPOTIPY_REDIRECT_URI=YOUR_REDIRECT_URI  
 
     On Windows
-    >setx SPOTIFY_CLIENT_ID YOUR_CLIENT_ID  
-    >setx SPOTIFY_CLIENT_SECRET YOUR_CLIENT_SECRET  
-    >setx SPOTIFY_REDIRECT_URI YOUR_REDIRECT_URI  
+    >setx SPOTIPY_CLIENT_ID YOUR_CLIENT_ID  
+    >setx SPOTIPY_CLIENT_SECRET YOUR_CLIENT_SECRET  
+    >setx SPOTIPY_REDIRECT_URI YOUR_REDIRECT_URI  
 4. To test proper installation, run spotifyFunctions.py. After inputting your Spotify username, you should have a playlist named *Test*. It should contain the following tracks:
     | Track Name| Artist |
     | ----- | :----------- |

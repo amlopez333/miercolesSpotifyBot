@@ -14,10 +14,10 @@ import spotipy.util as util
 #Agregar manajo de excepciones
 ###########################
 
-#recibe el nombre del login del usuario
+#recibe el nombre del login del usuario 
 #retorna un objeto spotify.
 def login(user):
-    scope = 'playlist-modify-public playlist-read-collaborative playlist-modify-private'
+    scope = 'playlist-modify-public playlist-read-collaborative playlist-modify-private playlist-read-private user-follow-modify user-read-email'
     token = util.prompt_for_user_token(user, scope)
     spotify = spotipy.Spotify(token)
     return spotify
